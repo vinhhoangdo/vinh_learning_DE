@@ -1,0 +1,172 @@
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.7 (Oracle Corporation Java 17.0.2)
+[debug]             Load.loadUnit: plugins took 21.6318ms
+[debug]             Load.loadUnit: defsScala took 0.0046ms
+[debug] [Loading] Scanning directory C:\Users\Vinh\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Vinh\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 0.9911 ms
+[debug]                 Load.resolveProject(global-plugins) took 1.8843ms
+[debug]               Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Vinh\.sbt\1.0\plugins, plugins: List(<none>))) took 3.1856ms
+[debug] [Loading] Done in C:\Users\Vinh\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]             Load.loadUnit: loadedProjectsRaw took 4.1903ms
+[debug]             Load.loadUnit: cleanEvalClasses took 0.0073ms
+[debug]           Load.loadUnit(file:/C:/Users/Vinh/.sbt/1.0/plugins/, ...) took 26.6861ms
+[debug]         Load.apply: load took 28.2486ms
+[debug]         Load.apply: resolveProjects took 0.1139ms
+[debug]         Load.apply: finalTransforms took 5.9431ms
+[debug]         Load.apply: config.delegates took 0.2831ms
+[debug]         Load.apply: Def.make(settings)... took 40.1881ms
+[debug]         Load.apply: structureIndex took 17.1691ms
+[debug]         Load.apply: mkStreams took 0.0092ms
+[info] loading global plugins from C:\Users\Vinh\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]       Load.defaultLoad until apply took 220.078ms
+[debug]                             Load.loadUnit: plugins took 31.9665ms
+[debug]                             Load.loadUnit: defsScala took 0.0106ms
+[debug] [Loading] Scanning directory C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project
+[debug]                               Load.loadUnit: mkEval took 0.4326ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.2909 ms
+[info] loading settings for project vinhlearningde-build-build-build from metals.sbt ...
+[debug]                                 Load.resolveProject(vinhlearningde-build-build-build) took 7.7475ms
+[debug]                               Load.loadTransitive: finalizeProject(Project(id vinhlearningde-build-build-build, base: C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project, plugins: List(<none>))) took 9.49ms
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project, returning: (vinhlearningde-build-build-build)
+[debug]                             Load.loadUnit: loadedProjectsRaw took 34.2699ms
+[debug]                             Load.loadUnit: cleanEvalClasses took 4.6726ms
+[debug]                           Load.loadUnit(file:/C:/Users/Vinh/Desktop/Job/VinhLearningDE/project/project/project/, ...) took 72.5686ms
+[debug]                         Load.apply: load took 74.0408ms
+[debug]                         Load.apply: resolveProjects took 0.1019ms
+[debug]                         Load.apply: finalTransforms took 7.7831ms
+[debug]                         Load.apply: config.delegates took 0.28ms
+[debug]                         Load.apply: Def.make(settings)... took 39.5333ms
+[debug]                         Load.apply: structureIndex took 12.9759ms
+[debug]                         Load.apply: mkStreams took 0.0028ms
+[info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                       Load.loadUnit: plugins took 233.4504ms
+[debug]                       Load.loadUnit: defsScala took 0.0027ms
+[debug] [Loading] Scanning directory C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project
+[debug]                         Load.loadUnit: mkEval took 0.2008ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.0818 ms
+[info] loading settings for project vinhlearningde-build-build from metals.sbt ...
+[debug]                           Load.resolveProject(vinhlearningde-build-build) took 18.8345ms
+[debug]                         Load.loadTransitive: finalizeProject(Project(id vinhlearningde-build-build, base: C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project, plugins: List(<none>))) took 20.2899ms
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project, returning: (vinhlearningde-build-build)
+[debug]                       Load.loadUnit: loadedProjectsRaw took 35.6381ms
+[debug]                       Load.loadUnit: cleanEvalClasses took 3.3021ms
+[debug]                     Load.loadUnit(file:/C:/Users/Vinh/Desktop/Job/VinhLearningDE/project/project/, ...) took 273.2814ms
+[debug]                   Load.apply: load took 274.5473ms
+[debug]                   Load.apply: resolveProjects took 0.0712ms
+[debug]                   Load.apply: finalTransforms took 11.1521ms
+[debug]                   Load.apply: config.delegates took 0.3381ms
+[debug]                   Load.apply: Def.make(settings)... took 62.497ms
+[debug]                   Load.apply: structureIndex took 25.1887ms
+[debug]                   Load.apply: mkStreams took 0.0034ms
+[info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Generated .bloop\vinhlearningde-build-build.json
+[success] Total time: 1 s, completed Nov 23, 2023, 2:22:20 PM
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                 Load.loadUnit: plugins took 1457.6256ms
+[debug]                 Load.loadUnit: defsScala took 0.0038ms
+[debug] [Loading] Scanning directory C:\Users\Vinh\Desktop\Job\VinhLearningDE\project
+[debug]                   Load.loadUnit: mkEval took 0.4565ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.2953 ms
+[info] loading settings for project vinhlearningde-build from metals.sbt,plugins.sbt,idea.sbt ...
+[debug]                     Load.resolveProject(vinhlearningde-build) took 21.6755ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id vinhlearningde-build, base: C:\Users\Vinh\Desktop\Job\VinhLearningDE\project, plugins: List(<none>))) took 23.5509ms
+[debug] [Loading] Done in C:\Users\Vinh\Desktop\Job\VinhLearningDE\project, returning: (vinhlearningde-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 766.6273ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 16.0456ms
+[debug]               Load.loadUnit(file:/C:/Users/Vinh/Desktop/Job/VinhLearningDE/project/, ...) took 2241.3775ms
+[debug]             Load.apply: load took 2242.7422ms
+[debug]             Load.apply: resolveProjects took 0.1615ms
+[debug]             Load.apply: finalTransforms took 11.9471ms
+[debug]             Load.apply: config.delegates took 0.3011ms
+[debug]             Load.apply: Def.make(settings)... took 55.0081ms
+[debug]             Load.apply: structureIndex took 15.5403ms
+[debug]             Load.apply: mkStreams took 0.0029ms
+[info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Canceling execution...
+[error] Cancelled: loadp
+[error] Cancelled: loadp
+[error] Use 'last' for the full log.
+[debug] > Exec(loadFailed, None, None)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[debug] > Exec(last, None, None)
+[debug] > Exec(loadFailed, None, None)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)
+[warn] Project loading failed: (r)etry, (q)uit, (l)ast, or (i)gnore? (default: r)

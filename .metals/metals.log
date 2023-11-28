@@ -1,0 +1,196 @@
+2023.11.22 11:20:26 INFO  Started: Metals version 1.1.0 in folders 'C:\Users\Vinh\Desktop\Job\VinhLearningDE' for client Visual Studio Code 1.83.1.
+Nov 22, 2023 11:20:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2023.11.22 11:20:28 WARN  Build server is not auto-connectable.
+2023.11.22 11:20:28 WARN  no build target for: C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+2023.11.22 11:20:35 INFO  no build target found for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt. Using presentation compiler with project's scala-library version: 3.3.1
+2023.11.22 11:20:39 INFO  time: code lens generation in 10s
+2023.11.22 11:20:39 INFO  time: code lens generation in 8.62s
+2023.11.22 11:22:13 ERROR Failed to tokenize input for semantic tokens for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:11: error: unclosed string literal
+      "org.apache.spark" %% "spark-core" % sparkVersion % "provided,
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.11.22 11:22:21 ERROR Failed to tokenize input for semantic tokens for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:12: error: unclosed string literal
+      "org.apache.spark" %% "spark-sql" % sparkVersion % "provided,
+                                                         ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.11.22 11:22:21 ERROR Failed to tokenize input for semantic tokens for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:12: error: unclosed string literal
+      "org.apache.spark" %% "spark-sql" % sparkVersion % ",
+                                                         ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.11.22 11:22:25 ERROR Failed to tokenize input for semantic tokens for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:13: error: unclosed string literal
+      "com.databricks" %% "dbutils-api" % "0.0.6" % "provided,
+                                                    ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.11.22 11:22:25 ERROR Failed to tokenize input for semantic tokens for C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+scala.meta.tokenizers.TokenizeException: <input>:13: error: unclosed string literal
+      "com.databricks" %% "dbutils-api" % "0.0.6" % ",
+                                                    ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:539)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2023.11.22 11:22:30 WARN  no build target for: C:\Users\Vinh\Desktop\Job\VinhLearningDE\build.sbt
+2023.11.22 11:22:37 INFO  running 'C:\Program Files\Java\jdk-1.8\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Vinh\AppData\Local\Temp\metals8856093483869504033\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.11.22 11:22:39 INFO  [info] welcome to sbt 1.9.7 (Oracle Corporation Java 1.8.0_391)
+2023.11.22 11:22:43 INFO  [info] loading settings for project vinhlearningde-build-build-build from metals.sbt ...
+2023.11.22 11:22:43 INFO  [info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\project
+2023.11.22 11:22:52 INFO  [info] loading settings for project vinhlearningde-build-build from metals.sbt ...
+2023.11.22 11:22:52 INFO  [info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project
+2023.11.22 11:23:01 INFO  [success] Generated .bloop\vinhlearningde-build-build.json
+2023.11.22 11:23:01 INFO  [success] Total time: 9 s, completed Nov 22, 2023 11:23:01 AM
+2023.11.22 11:23:03 INFO  [info] loading settings for project vinhlearningde-build from metals.sbt,plugins.sbt ...
+2023.11.22 11:23:03 INFO  [info] loading project definition from C:\Users\Vinh\Desktop\Job\VinhLearningDE\project
+2023.11.22 11:23:08 INFO  [success] Generated .bloop\vinhlearningde-build.json
+2023.11.22 11:23:08 INFO  [success] Total time: 5 s, completed Nov 22, 2023 11:23:09 AM
+2023.11.22 11:23:11 INFO  [info] loading settings for project root from build.sbt ...
+2023.11.22 11:23:11 INFO  [info] set current project to VinhLearningDE (in build file:/C:/Users/Vinh/Desktop/Job/VinhLearningDE/)
+2023.11.22 11:23:14 INFO  [success] Generated .bloop\root-test.json
+2023.11.22 11:23:14 INFO  [success] Generated .bloop\root.json
+2023.11.22 11:23:14 INFO  [success] Total time: 2 s, completed Nov 22, 2023 11:23:14 AM
+2023.11.22 11:23:14 INFO  time: ran 'sbt bloopInstall' in 37s
+2023.11.22 11:23:14 INFO  Attempting to connect to the build server...
+2023.11.22 11:23:14 INFO  Setting up current java home C:\Program Files\Java\jdk-1.8 in C:\Users\Vinh\.bloop\bloop.json
+2023.11.22 11:23:36 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Vinh\Desktop\Job\VinhLearningDE\.metals\bsp.trace.json or C:\Users\Vinh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.22 11:23:45 INFO  Attempting to connect to the build server...
+2023.11.22 11:23:45 INFO  Bloop uses C:\Program Files\Java\jdk-1.8 defined at C:\Users\Vinh\.bloop\bloop.json
+2023.11.22 11:23:45 INFO  Attempting to connect to the build server...
+2023.11.22 11:23:45 INFO  Bloop uses C:\Program Files\Java\jdk-1.8 defined at C:\Users\Vinh\.bloop\bloop.json
+2023.11.22 11:23:45 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\.metals\bsp.trace.json or C:\Users\Vinh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.22 11:23:46 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Vinh\Desktop\Job\VinhLearningDE\project\project\.metals\bsp.trace.json or C:\Users\Vinh\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.22 11:23:46 INFO  time: Connected to build server in 31s
+2023.11.22 11:23:46 INFO  Connected to Build server: Bloop v1.5.11
+2023.11.22 11:23:46 INFO  time: Imported build in 0.39s
+2023.11.22 11:24:07 INFO  time: indexed workspace in 20s
+2023.11.22 11:26:18 INFO  Shutting down server
+2023.11.22 11:26:18 INFO  shutting down Metals
+2023.11.22 11:26:18 INFO  Shut down connection with build server.
+2023.11.22 11:26:18 INFO  Shut down connection with build server.
+2023.11.22 11:26:18 INFO  Shut down connection with build server.
+2023.11.22 11:26:18 INFO  Exiting server
