@@ -1,7 +1,7 @@
 package job
 
 import org.apache.spark.sql.types._
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
+import org.apache.spark.sql.{DataFrame, Row, SaveMode, SparkSession}
 import utils.Constants
 
 object MySparkJob {
@@ -64,6 +64,13 @@ object MySparkJob {
    */
   def removeDuplicatedRows(dataFrame: DataFrame): DataFrame = {
     dataFrame.distinct()
+  }
+
+  /**
+   * Transform to container in the Data Lake Storage Gen2
+   */
+  def transformToNewContainer(dataFrame: DataFrame): Unit = {
+    dataFrame.write.mode(SaveMode.Overwrite).parquet(Constants.newMountPoint)
   }
 
   /**

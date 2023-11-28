@@ -11,12 +11,12 @@ object LearningDE {
   val secretID: String = DatabricksUtils.getKeyVaultSecret(Constants.secretKeyName)
   val directoryID: String = DatabricksUtils.getKeyVaultSecret(Constants.directoryIDKeyName)
   val sasToken: String = DatabricksUtils.getKeyVaultSecret(Constants.sasTokenKeyName)
-  val dwServer: String = DatabricksUtils.getKeyVaultSecret(Constants.dwServerKeyName)
-  val dwDatabase: String = DatabricksUtils.getKeyVaultSecret(Constants.dwDatabaseKeyName)
-  val dwUser: String = DatabricksUtils.getKeyVaultSecret(Constants.dwUserKeyName)
-  val dwPass: String = DatabricksUtils.getKeyVaultSecret(Constants.dwPassKeyName)
-  private val tempDirPath: String = DatabricksUtils.getKeyVaultSecret(Constants.tempDirKeyName)
-  private val storageAccountAccessKey: String = DatabricksUtils.getKeyVaultSecret(Constants.storageAccountAccessKeyName)
+//  val dwServer: String = DatabricksUtils.getKeyVaultSecret(Constants.dwServerKeyName)
+//  val dwDatabase: String = DatabricksUtils.getKeyVaultSecret(Constants.dwDatabaseKeyName)
+//  val dwUser: String = DatabricksUtils.getKeyVaultSecret(Constants.dwUserKeyName)
+//  val dwPass: String = DatabricksUtils.getKeyVaultSecret(Constants.dwPassKeyName)
+//  private val tempDirPath: String = DatabricksUtils.getKeyVaultSecret(Constants.tempDirKeyName)
+//  private val storageAccountAccessKey: String = DatabricksUtils.getKeyVaultSecret(Constants.storageAccountAccessKeyName)
 
 
   private def initializeSparkSession(): SparkSession = {
@@ -30,6 +30,7 @@ object LearningDE {
 
   private def completed(): Unit = {
     DatabricksUtils.unMountPoint(Constants.mountPoint)
+    DatabricksUtils.unMountPoint(Constants.newMountPoint)
     println("Complete the Spark Job!")
   }
 
@@ -56,7 +57,7 @@ object LearningDE {
         sparkConfSetUsingCredentials(spark)
         println(s"Mount the ADLS Gen2 using ${EMountMethod.Credentials}")
     }
-    println(s"Mount point path: ${mountPoint}")
+    println(s"Mount point path: $mountPoint")
   }
 
   private def sparkConfSetUsingCredentials(spark: SparkSession): Unit = {
@@ -75,6 +76,7 @@ object LearningDE {
 
   def main(args: Array[String]): Unit = {
     try {
+      val mountMethod = args.mkString
       val spark = initializeSparkSession()
       if (spark != null) {
         println("The Spark have been successfully initialised")
@@ -82,7 +84,7 @@ object LearningDE {
         println("Failed to initialised Spark session")
       }
       println("Starting - Mount the ADLS Gen2 to path")
-      mountADLS(spark, containerName, args.mkString)
+      mountADLS(spark, containerName, mountMethod)
       println("Ending - Mount the ADLS Gen2 to path")
       println("Starting the Spark Job!")
       println("Starting - Read parquet file from the container and print the schema")
@@ -110,13 +112,25 @@ object LearningDE {
       println("After remove duplicate rows, rows length = " + removeDupRowsDF.schema.fields.length)
       println("Ending - Remove duplicate rows on DataFrame")
 
-      println("BEGIN - TRANSFORM DATA WAREHOUSE")
-      val sc = SparkContext.getOrCreate()
-      sc.hadoopConfiguration.set(s"fs.azure.account.key.$storageAccountName.dfs.core.windows.net", storageAccountAccessKey)
-      spark.conf.set("spark.sql.parquet.writeLegacyFormat", "true")
-      val tempDir = s"abfss://$newContainerName@$storageAccountName.dfs.core.windows.net/$tempDirPath"
-      MySparkJob.transformToDWTable(removeDupRowsDF, tempDir, dwDatabase, dwServer, dwUser, dwPass)
-      println("END - TRANSFORM DATA WAREHOUSE")
+      println("Starting - Transform to new container in ADLS Gen2")
+      mountADLS(
+        spark = spark,
+        containerName = newContainerName,
+        mountMethod = mountMethod,
+        mountPoint = Constants.newMountPoint
+      )
+      MySparkJob.transformToNewContainer(removeDupRowsDF)
+      println("Ending - Transform to new container in ADLS Gen2")
+
+      // Use for Azure Synapse Analytics
+
+      //      println("Starting - Transform to Data Warehouse")
+      //      val sc = SparkContext.getOrCreate()
+      //      sc.hadoopConfiguration.set(s"fs.azure.account.key.$storageAccountName.dfs.core.windows.net", storageAccountAccessKey)
+      //      spark.conf.set("spark.sql.parquet.writeLegacyFormat", "true")
+      //      val tempDir = s"abfss://$newContainerName@$storageAccountName.dfs.core.windows.net/$tempDirPath"
+      //      MySparkJob.transformToDWTable(removeDupRowsDF, tempDir, dwDatabase, dwServer, dwUser, dwPass)
+      //      println("Ending - Transform to Data Warehouse")
 
     } finally {
       completed()
